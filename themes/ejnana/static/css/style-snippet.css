@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Noto-Sans-Kannada';
+    src: url(/fonts/NotoSansKannada-Regular.ttf);
+}
+
+h1
+{
+    line-height: 1.5;
+}
+
+.sub-title
+{
+    font-size: 0.85rem;
+}
+
+.snippet-text
+{
+    font-family: 'Noto-Sans-Kannada';
+}
+
+.navbar-bottom
+{
+    font-size: 00.85rem;
+}
+
+hr
+{
+    stroke: #D7CCC8;
+}

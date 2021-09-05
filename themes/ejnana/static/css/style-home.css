@@ -1,0 +1,107 @@
+body
+{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.container
+{
+    max-width: 480px;
+}
+
+.navbar
+{
+    background-color: #D7CCC8;
+}
+
+.body-wrapper-nav-compensate
+{
+    margin: 5rem 1%;
+}
+
+h1
+{
+    line-height: 1.5;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.horizontal-scroll-row
+{
+    display: block;
+    overflow-x: auto;
+    overflow-Y: hidden;
+    white-space: nowrap;
+    padding-bottom: 5%;
+}
+
+.horizontal-scroll-col
+{
+    display: inline-block;
+    margin-right: 2rem;    
+}
+
+.card-title
+{
+    font-weight: bold;
+}
+
+.parent
+{
+    position: relative;
+    width: fit-content;
+}
+
+.child1
+{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: #BCAAA4;
+    width: 102%;
+    height: 102%;
+    z-index: -1;
+}
+
+.child2
+{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    background-color: #A1887F;
+    width: 104%;
+    height: 104%;
+    z-index: -2;
+}
+
+.snippet-count
+{
+    position: absolute;
+    right: 10px;
+    top: 85px;
+    background-color: white;
+    z-index: 2;
+    padding: 2.5% 2.5% 0% 2.5%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    color: D7CCC8;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.card-img-top
+{
+    filter: brightness(0.5);
+    height: 128px;
+    object-fit: cover;
+}
+
+.card-body
+{
+    background-color: #D7CCC8;
+    white-space: normal;
+}
+
+
