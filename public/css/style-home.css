@@ -11,6 +11,8 @@ body
 .navbar
 {
     background-color: #D7CCC8;
+    max-width: 480px;
+    margin: 0px auto;
 }
 
 .body-wrapper-nav-compensate
@@ -95,6 +97,7 @@ a
 {
     filter: brightness(0.5);
     height: 128px;
+    width: 216px;
     object-fit: cover;
 }
 
