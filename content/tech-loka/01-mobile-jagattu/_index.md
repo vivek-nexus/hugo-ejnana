@@ -8,5 +8,4 @@ oneLiner: "Subtitle"
 image: "https://upload.wikimedia.org/wikipedia/commons/5/55/Smartphone_use_at_railway_station.jpg"
 imageCreditsText: "Image from Wikimedia Commons"
 easterEgg: true
-#knowMoreLink: "https://wikipedia.org"
 ---
