@@ -10,7 +10,7 @@ body
 
 .navbar
 {
-    background-color: #D7CCC8;
+    background-color: #C7D8DE;
     max-width: 480px;
     margin: 0px auto;
 }
@@ -63,7 +63,7 @@ a
     position: absolute;
     top: 2%;
     left: 2%;
-    background-color: #BCAAA4;
+    background-color: #a7bdc6;
     width: 102%;
     height: 102%;
     z-index: -1;
@@ -74,7 +74,7 @@ a
     position: absolute;
     top: 4%;
     left: 4%;
-    background-color: #A1887F;
+    background-color: #86a3ae;
     width: 104%;
     height: 104%;
     z-index: -2;
@@ -90,7 +90,7 @@ a
     z-index: 2;
     padding: 2.5% 2.5% 0% 2.5%;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    color: D7CCC8;
+    color: #795548;
     font-weight: bold;
     font-size: 0.85rem;
 }
@@ -105,13 +105,21 @@ a
 
 .card-body
 {
-    background-color: #D7CCC8;
+    background-color: #C7D8DE;
     white-space: normal;
 }
 
 .primary-font-colour
 {
-    color: #5D4037;
+    color: #795548;
+}
+
+.inter-ligatures
+{
+    font-family: 'Inter', sans-serif; 
+    white-space: nowrap;
+    font-size: 1rem;
+
 }
 
 

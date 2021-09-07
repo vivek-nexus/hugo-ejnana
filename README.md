@@ -10,6 +10,7 @@ View site at https://ejnana.github.io
 - [ ] Try some UI improvements
     - [x] Implemented box shadows
     - [x] New font colours: Content text—black, UI text—colour palette
+    - [x] New colour palette
 - [x] Update logo colour to primary colour
 - [ ] Add coronalogy content
 - [ ] Get Webshare API working
