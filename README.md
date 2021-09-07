@@ -1,12 +1,16 @@
 # Ejnana Hugo project
 
-View this site at https://ejnana.github.io
+View site at https://ejnana.github.io
 
 # Bucketlist
 - [ ] Generic image that says "Imagine the photo for this image—yourself!"
-- [ ] Clean up header
+- [x] Clean up header
 - [ ] Get a logo ready
 - [ ] Add read next card at the end of each collection
 - [ ] Try some UI improvements
-- [ ] Update logo colour to primary colour
+    - [x] Implemented box shadows
+    - [x] New font colours: Content text—black, UI text—colour palette
+- [x] Update logo colour to primary colour
 - [ ] Add coronalogy content
+- [ ] Get Webshare API working
+- [ ] Try to hide scrollbar

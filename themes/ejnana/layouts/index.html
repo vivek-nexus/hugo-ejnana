@@ -33,20 +33,20 @@
                     <img src="images/image.svg" alt="">
                 </div>
                 <div class="col">
-                    <h1 class="fw-bold">ಮಾಹಿತಿ ತುಣುಕುಗಳು,<br>ನಿಮಗಾಗಿ ಕನ್ನಡದಲ್ಲಿ!</h1>
+                    <h1 class="fw-bold primary-font-colour">ಮಾಹಿತಿ ತುಣುಕುಗಳು,<br>ನಿಮಗಾಗಿ ಕನ್ನಡದಲ್ಲಿ!</h1>
                 </div>
             </div>
 
 
             {{ range .Pages}}
-            <div class="mb-5"> 
+            <div class="mb-2"> 
                 <div class="row justify-content-between">
                     <div class="col-auto">
-                        <h2>{{ .Title }}</h1>
+                        <h2 class="primary-font-colour">{{ .Title }}</h1>
                     </div>
                     <div class="col-auto">
                         <a href="{{ .RelPermalink }}">
-                            <p>ಇನ್ನಷ್ಟು</p>
+                            <p class="primary-font-colour">ಇನ್ನಷ್ಟು</p>
                         </a>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                                 {{ end }}
                                 <div class="card-body">
                                     <a href="{{ .RelPermalink }}001" class="stretched-link">
-                                        <h4 class="card-title">{{ .Title }} <span style="font-family: 'IBM Plex Sans', sans-serif;">&rarr;</span></h4>
+                                        <h4 class="card-title primary-font-colour">{{ .Title }} <span style="font-family: 'IBM Plex Sans', sans-serif;">&rarr;</span></h4>
                                     </a>
                                     <p class="card-text">Subtitle</p>
                                 </div>
@@ -83,7 +83,7 @@
                     <!-- See all -->
                     <div class="col-6 horizontal-scroll-col">
                         <a href="{{ .RelPermalink }}">
-                            <p>ಎಲ್ಲವನ್ನೂ ನೋಡಿ →</p>
+                            <p class="primary-font-colour">ಎಲ್ಲವನ್ನೂ ನೋಡಿ →</p>
                         </a>
                     </div>
                 </div>

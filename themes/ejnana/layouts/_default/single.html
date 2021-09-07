@@ -27,22 +27,22 @@
         {{ partial "header.html" . }}
 
         <div class="body-wrapper-nav-compensate">  
-            <p class="mb-4 breadcrumbs sub-title text-black-50">ನೀವು ಇಲ್ಲಿದ್ದೀರಿ: <span class="fw-bold">{{ .Params.topic }} > {{ .Params.collection }}</span></p>
+            <p class="mb-4 breadcrumbs sub-title">ನೀವು ಇಲ್ಲಿದ್ದೀರಿ: <span class="fw-bold">{{ .Params.topic }} > {{ .Params.collection }}</span></p>
             <div class="mb-3">
                 {{ if .Params.image }}
                 <img src="{{ .Params.image }}" alt="" style="width: 100%; box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;" class="rounded">
                 {{ else }}
                 <img src="/images/image.svg" alt="" style="width: 100%; box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;" class="rounded mb-3">
                 {{ end }}
-                <p style="font-family: 'IBM Plex Sans', sans-serif;"><a class="sub-title text-black-50" href="{{ .Params.image }}">{{ .Params.imageCreditsText }}</a></p>
+                <p style="font-family: 'IBM Plex Sans', sans-serif;"><a class="sub-title" href="{{ .Params.image }}">{{ .Params.imageCreditsText }}</a></p>
             </div>
 
             <hr class="mx-auto" style="width: 50%;">
 
 
-            <h1 class="fw-bold"><span style="font-family: 'IBM Plex Sans', sans-serif;">{{ .Params.titleEnglish }}</span> {{ .Params.titleKannada }} <span class="fs-6">({{ .Params.weight }}/{{ len (where .Site.RegularPages "Dir" "=" .Dir ) }})</span></h1>
+            <h1 class="fw-bold primary-font-colour"><span style="font-family: 'IBM Plex Sans', sans-serif;">{{ .Params.titleEnglish }}</span> {{ .Params.titleKannada }} <span class="fs-6">({{ .Params.weight }}/{{ len (where .Site.RegularPages "Dir" "=" .Dir ) }})</span></h1>
 
-            <p class="sub-title text-black-50">{{ .Params.author }} | {{ .PublishDate.Format "January 2, 2006" }}</p>
+            <p class="sub-title">{{ .Params.author }} | {{ .PublishDate.Format "January 2, 2006" }}</p>
 
             <div class="row align-items-center mb-4">
                 <div class="col-auto"><a href="whatsapp://send?text={{ .Permalink }}"><img src="/images/whatsapp.svg" alt=""></a></div>
@@ -53,7 +53,7 @@
 
             <div class="row align-items-center">
                 {{ if .Params.knowMoreLink}}
-                <div class="col-auto fw-bold"><a href="{{ .Params.knowMoreLink }}" target="blank">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ  ↗</a></div>
+                <div class="col-auto fw-bold"><a href="{{ .Params.knowMoreLink }}" target="blank" class="primary-font-colour">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ  ↗</a></div>
                 <!-- <div class="col px-0"><img width="9%" src="/images/new-tab.svg" alt=""></div> -->
                 {{ end }}
             </div>

@@ -28,7 +28,7 @@
 
         <div class="body-wrapper-nav-compensate">
             {{ if not .Params.easterEgg }}
-                <h2>{{ .Params.title }}</h2>  
+                <h2 class="primary-font-colour">{{ .Params.title }}</h2>  
                 {{ range .Pages}}
                     <div class="parent mx-auto mb-5" style="width: 70%;">
                         <div class="card" style="width: 100%;">
@@ -39,7 +39,7 @@
                             {{ end }}
                             <div class="card-body">
                                 <a href="{{ .RelPermalink }}001" class="stretched-link">
-                                    <h4 class="card-title">{{ .Title }} <span style="font-family: 'IBM Plex Sans', sans-serif;">&rarr;</span></h4>
+                                    <h4 class="card-title primary-font-colour">{{ .Title }} <span style="font-family: 'IBM Plex Sans', sans-serif;">&rarr;</span></h4>
                                 </a>
                                 <p class="card-text">Subtitle</p>
                             </div>
