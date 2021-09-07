@@ -34,13 +34,13 @@
                 {{ else }}
                 <img src="/images/image.svg" alt="" style="width: 100%; box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;" class="rounded mb-3">
                 {{ end }}
-                <p style="font-family: 'IBM Plex Sans', sans-serif;"><a class="sub-title" href="{{ .Params.image }}">{{ .Params.imageCreditsText }}</a></p>
+                <p style="font-family: 'Inter', sans-serif;"><a class="sub-title" href="{{ .Params.image }}">{{ .Params.imageCreditsText }}</a></p>
             </div>
 
             <hr class="mx-auto" style="width: 50%;">
 
 
-            <h1 class="fw-bold primary-font-colour"><span style="font-family: 'IBM Plex Sans', sans-serif;">{{ .Params.titleEnglish }}</span> {{ .Params.titleKannada }} <span class="fs-6">({{ .Params.weight }}/{{ len (where .Site.RegularPages "Dir" "=" .Dir ) }})</span></h1>
+            <h1 class="fw-bold primary-font-colour"><span style="font-family: 'Inter', sans-serif;">{{ .Params.titleEnglish }}</span> {{ .Params.titleKannada }} <span class="fs-6">({{ .Params.weight }}/{{ len (where .Site.RegularPages "Dir" "=" .Dir ) }})</span></h1>
 
             <p class="sub-title">{{ .Params.author }} | {{ .PublishDate.Format "January 2, 2006" }}</p>
 
