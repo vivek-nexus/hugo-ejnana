@@ -24,10 +24,10 @@
 
 <body>
     <div class="container">
-        {{ partial "header.html" . }}
+        <!-- {{ partial "header.html" . }} -->
 
-        <div class="body-wrapper-nav-compensate">  
-            <p class="mb-4 breadcrumbs sub-title">ನೀವು ಇಲ್ಲಿದ್ದೀರಿ: <span class="fw-bold">{{ .Params.topic }} > {{ .Params.collection }}</span></p>
+        <div>  
+            <p class="my-4 breadcrumbs sub-title">ನೀವು ಇಲ್ಲಿದ್ದೀರಿ: <span class="fw-bold">{{ .Params.topic }} > {{ .Params.collection }}</span></p>
             <div class="mb-3">
                 {{ if .Params.image }}
                 <img src="{{ .Params.image }}" alt="" style="width: 100%; box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;" class="rounded">
@@ -57,6 +57,7 @@
                 <!-- <div class="col px-0"><img width="9%" src="/images/new-tab.svg" alt=""></div> -->
                 {{ end }}
             </div>
+            <div class="bottom-nav-compensate"></div>
             {{ partial "footer.html" . }}
         </div>
 
