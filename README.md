@@ -16,3 +16,4 @@ View site at https://ejnana.github.io
 - [ ] Get Webshare API working
 - [ ] Add continue reading button with cookies
 - [ ] Try to hide scrollbar
+- [ ] Fix translation pop-up killing bottom navbar
