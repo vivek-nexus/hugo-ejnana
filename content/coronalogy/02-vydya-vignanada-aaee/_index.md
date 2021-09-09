@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 2
 title: "ವೈದ್ಯವಿಜ್ಞಾನದ ಅಆಇಈ"
 draft: true
 topic: "ಕೊರೋನಾಲಜಿ"

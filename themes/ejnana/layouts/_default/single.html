@@ -28,6 +28,8 @@
 
         <div>  
             <p class="my-4 breadcrumbs sub-title">ನೀವು ಇಲ್ಲಿದ್ದೀರಿ: <span class="fw-bold">{{ .Params.topic }} > {{ .Params.collection }}</span></p>
+  
+  
             <div class="mb-3">
                 {{ if .Params.image }}
                 <img src="{{ .Params.image }}" alt="" style="width: 100%; box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;" class="rounded">
@@ -40,7 +42,7 @@
             <hr class="mx-auto" style="width: 50%;">
 
 
-            <h1 class="fw-bold primary-font-colour"><span style="font-family: 'Inter', sans-serif;">{{ .Params.titleEnglish }}</span> {{ .Params.titleKannada }} <span class="fs-6">({{ .Params.weight }}/{{ len (where .Site.RegularPages "Dir" "=" .Dir ) }})</span></h1>
+            <h1 class="fw-bold primary-font-colour"><span style="font-family: 'Inter', sans-serif;">{{ .Params.titleEnglish }}</span> {{ .Params.titleKannada }} <span class="fs-6">({{ .Params.weight }}/{{ len (where .Site.RegularPages ".Params.collection" "=" .Params.collection ) }})</span></h1>
 
             <p class="sub-title">{{ .Params.author }} | {{ .PublishDate.Format "January 2, 2006" }}</p>
 
@@ -57,6 +59,15 @@
                 <!-- <div class="col px-0"><img width="9%" src="/images/new-tab.svg" alt=""></div> -->
                 {{ end }}
             </div>
+
+            {{ if not .PrevInSection }}
+                {{ $currentWeight := .Parent.Params.weight }}                
+                {{ $parentPages := .CurrentSection.Parent }}
+                    {{ range where $parentPages.Pages ".Weight" (add ($currentWeight) 1) }}
+                        <a href="{{ .Permalink }}/001">{{.Title}}</a>
+                    {{ end }}
+                </div>
+            {{ end }}
             <div class="bottom-nav-compensate"></div>
             {{ partial "footer.html" . }}
         </div>

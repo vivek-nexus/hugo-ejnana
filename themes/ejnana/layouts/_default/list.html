@@ -49,7 +49,7 @@
                         <div class=" card child2">
                         </div>
                         <div class=" card snippet-count">
-                            {{ len (where .Site.RegularPages "Dir" "=" .Dir ) }} ತುಣುಕುಗಳು
+                            {{ len (where .Site.RegularPages ".Params.collection" "=" .Params.collection ) }} ತುಣುಕುಗಳು
                         </div>
                     </div>
                 {{ end }}
@@ -61,7 +61,7 @@
                 <img style="max-width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Easter_Eggs.JPG/800px-Easter_Eggs.JPG" alt="easter-egg">
                 <p style="font-family: 'Inter', sans-serif;"><a class="sub-title" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Easter_Eggs.JPG/800px-Easter_Eggs.JPG">Image from Wikimedia Commons</a></p>
             {{ end }}
-            
+
             <div class="bottom-nav-compensate"></div>
             
             {{ partial "footer.html" . }}
