@@ -1,9 +1,10 @@
 document.querySelector('#share-link').addEventListener('click', function () {
     if (navigator.share) {
         navigator.share({
-    url: '{{ .Permalink }}'
+            title: '{{ .Title }}',
+            url: '{{ .Permalink }}'
         })
-            .then(() => console.log('Share complete'))
-            .error((error) => console.error('Could not share at this time', error))
+            .then(() => prompt('Successful share'))
+            .catch((error) => prompt('Error sharing', error));
     }
 });

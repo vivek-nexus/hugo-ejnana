@@ -107,7 +107,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Creative Commons ಕ್ರಿಯೇಟಿವ್ ಕಾಮನ್ಸ್ ',
+                        url: 'https:\/\/ejnana.github.io\/tech-loka\/03-tech-loka\/006\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

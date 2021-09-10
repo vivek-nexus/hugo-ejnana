@@ -108,7 +108,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'ಎಪಿಡೆಮಿಕ್, ಪ್ಯಾನ್‌ಡೆಮಿಕ್ ಇವೆಲ್ಲ ಏನು?',
+                        url: 'https:\/\/ejnana.github.io\/coronalogy\/01-prathamika-parichaya\/002\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

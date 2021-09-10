@@ -108,7 +108,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'ಜ಼ೂನಾಟಿಕ್ ಕಾಯಿಲೆಗಳು',
+                        url: 'https:\/\/ejnana.github.io\/coronalogy\/02-vydya-vignanada-aaee\/003\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

@@ -107,7 +107,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'ವಿಶ್ವ ಆರೋಗ್ಯ ಸಂಸ್ಥೆಯ ಪಾತ್ರವೇನು?',
+                        url: 'https:\/\/ejnana.github.io\/coronalogy\/01-prathamika-parichaya\/004\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

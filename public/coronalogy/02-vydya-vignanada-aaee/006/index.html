@@ -109,7 +109,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'ಇಮ್ಯುನೋಕಾಂಪ್ರಮೈಸ್ಡ್ ಅಂದರೇನು?',
+                        url: 'https:\/\/ejnana.github.io\/coronalogy\/02-vydya-vignanada-aaee\/006\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

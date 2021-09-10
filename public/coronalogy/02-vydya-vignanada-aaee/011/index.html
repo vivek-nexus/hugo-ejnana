@@ -109,7 +109,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'ಲಸಿಕೆ ಅಂದರೇನು?',
+                        url: 'https:\/\/ejnana.github.io\/coronalogy\/02-vydya-vignanada-aaee\/011\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

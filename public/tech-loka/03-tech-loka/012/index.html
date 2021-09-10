@@ -107,7 +107,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Speech Recognition ಸ್ಪೀಚ್ ರೆಕಗ್ನಿಶನ್',
+                        url: 'https:\/\/ejnana.github.io\/tech-loka\/03-tech-loka\/012\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

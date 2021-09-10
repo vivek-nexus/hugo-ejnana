@@ -108,7 +108,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'ರೋಗಲಕ್ಷಣ ಇಲ್ಲದ ರೋಗಿಗಳು!',
+                        url: 'https:\/\/ejnana.github.io\/coronalogy\/02-vydya-vignanada-aaee\/008\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

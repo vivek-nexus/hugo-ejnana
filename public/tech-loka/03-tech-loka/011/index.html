@@ -107,7 +107,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Virtual Reality ವರ್ಚುಯಲ್ ರಿಯಾಲಿಟಿ, ಛಾಯಾವಾಸ್ತವ',
+                        url: 'https:\/\/ejnana.github.io\/tech-loka\/03-tech-loka\/011\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>

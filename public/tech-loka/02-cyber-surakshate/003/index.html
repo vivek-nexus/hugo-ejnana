@@ -107,7 +107,18 @@
         })();
       </script>
 
-    
+    <script>
+        document.querySelector('#share-link').addEventListener('click', function () {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Ransomware ರ್‍ಯಾನ್‌ಸಮ್‌ವೇರ್',
+                        url: 'https:\/\/ejnana.github.io\/tech-loka\/02-cyber-surakshate\/003\/'
+                    })
+                        .then(() => prompt('Successful share'))
+                        .catch((error) => prompt('Error sharing', error));
+                }
+            });
+    </script>
 
     
 </body>
