@@ -3,7 +3,7 @@
 View site at https://ejnana.github.io
 
 # Bucketlist
-- [ ] Generic image that says "Imagine the photo for this image—yourself!"
+- [x] Generic image that says "Imagine the photo for this image—yourself!"
 - [x] Clean up header
 - [ ] Get a logo ready
 - [x] Add read next card at the end of each collection
@@ -14,7 +14,7 @@ View site at https://ejnana.github.io
 - [x] Update logo colour to primary colour
 - [x] Add coronalogy content
 - [x] Get Webshare API working
-- [ ] Add continue reading button with cookies
+- [x] Add continue reading button with browser localStorage
 - [ ] Try to hide scrollbar
 - [x] Fix translation pop-up killing bottom navbar
 - [ ] Add sitemap footer
