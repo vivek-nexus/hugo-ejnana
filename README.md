@@ -13,7 +13,7 @@ View site at https://ejnana.github.io
     - [x] New colour palette: Primary: #795548, Secondary: #C7D8DE
 - [x] Update logo colour to primary colour
 - [x] Add coronalogy content
-- [ ] Get Webshare API working
+- [x] Get Webshare API working
 - [ ] Add continue reading button with cookies
 - [ ] Try to hide scrollbar
 - [x] Fix translation pop-up killing bottom navbar
