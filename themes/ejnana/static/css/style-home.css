@@ -127,4 +127,18 @@ a
 
 }
 
+.btn
+{
+    background-color: #795548;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 8px 24px;
+}
+
+.btn:hover
+{
+    color: #C7D8DE;
+}
+
 

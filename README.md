@@ -17,4 +17,5 @@ View site at https://ejnana.github.io
 - [ ] Add continue reading button with cookies
 - [ ] Try to hide scrollbar
 - [x] Fix translation pop-up killing bottom navbar
-- [ ] Add footer
+- [ ] Add sitemap footer
+- [ ] SEO optimisation

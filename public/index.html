@@ -37,11 +37,14 @@
             
             <div class="row text-center mb-5">
                 <div class="col mb-4">
-                    <img src="images/image.svg" alt="">
+                    <img src="images/image-generic.svg" alt="">
                 </div>
                 <div class="col">
                     <h1 class="fw-bold primary-font-colour">ಮಾಹಿತಿ ತುಣುಕುಗಳು,<br>ನಿಮಗಾಗಿ ಕನ್ನಡದಲ್ಲಿ!</h1>
                 </div>
+            </div>
+            <div class="text-center mb-5">
+                <a class="btn d-none" id="last-url">ಓದುವುದನ್ನು ಮುಂದುವರೆಸಿ <span class="inter-ligatures">-></span></a>
             </div>
 
 
@@ -234,6 +237,13 @@
           mf.src = "//cdn.mouseflow.com/projects/468207aa-059f-4c3e-a1b8-7ebc9bd90961.js";
           document.getElementsByTagName("head")[0].appendChild(mf);
         })();
+      </script>
+
+      <script>
+          if(localStorage.getItem('url')){
+            document.querySelector('#last-url').setAttribute('href',localStorage.getItem('url'));
+            document.querySelector('#last-url').setAttribute('class','btn d-inline');
+          }
       </script>
     
 </body>
