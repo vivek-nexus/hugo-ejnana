@@ -3,7 +3,7 @@
 View site at https://ejnana.github.io
 
 # Bucketlist
-- [x] Generic image that says "Imagine the photo for this image—yourself!"
+- [x] Generic image that says "Imagine the photo for this snippet—yourself!"
 - [x] Clean up header
 - [ ] Get a logo ready
 - [x] Add read next card at the end of each collection
