@@ -28,3 +28,11 @@ hr
 {
     stroke: #C7D8DE;
 }
+
+.bottom-nav-special
+{
+    padding: 8px 4px;
+    background-color: #C7D8DE;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 4px;
+}

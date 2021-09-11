@@ -1,6 +1,7 @@
 body
 {
     font-family: 'Baloo Tamma 2', cursive;
+    padding: 4px 0px;
 }
 
 .container
@@ -22,7 +23,7 @@ body
 
 .bottom-nav-compensate
 {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 h1

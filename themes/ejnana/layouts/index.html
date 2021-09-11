@@ -85,7 +85,9 @@
                             <div class="card child2">
                             </div>
                             <div class="card snippet-count">
+                                <a href="{{ .RelPermalink }}001" class="stretched-link primary-font-colour">
                                 {{ len (where .Site.RegularPages ".Params.collection" "=" .Params.collection ) }} ತುಣುಕುಗಳು
+                                </a>
                             </div>
                         </div>
                     </div>
