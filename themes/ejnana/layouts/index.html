@@ -63,7 +63,7 @@
 
 
                 <div class="horizontal-scroll-row">
-                    {{ range .Pages}}
+                    {{ range where .Pages ".Weight" "le" 3 }}
                     <!-- Card -->
                     <div class="horizontal-scroll-col">
                         <div class="parent">

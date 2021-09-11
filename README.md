@@ -22,6 +22,7 @@ View site at https://ejnana.github.io
 - [x] Fix translation pop-up killing bottom navbar
 - [ ] Add sitemap footer
 - [ ] SEO optimisation
+- [x] Show only 3 cards per topic on homepage
 
 <br>
 <br>
